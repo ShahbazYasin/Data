@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ایصالِ ثواب</title>
+
+    <!-- Custom Font for Noori Nastaliq (If you have the font file) -->
+    <style>
+        @font-face {
+            font-family: 'Noori Nastaliq';
+            src: url('path-to-your-font/Noori-Nastaliq.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Noori Nastaliq', serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl; /* Right to Left */
+        }
+
+        header {
+            background-color: #2a3d52;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            font-family: 'Noori Nastaliq', serif; /* Header font */
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 80px 20px 20px; /* Added padding-top to avoid overlap with fixed header */
+        }
+
+        .box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Noori Nastaliq', serif; /* Data font */
+            color: #333;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.6); /* Glow effect */
+            background-color: #f0f8ff;
+        }
+
+        .box:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            right: -100%;
+            bottom: 0;
+            background-color: #fff;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+
+        .box:hover:before {
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 255, 255, 0.5); /* Light effect color */
+        }
+
+        .box span {
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Text glow effect */
+        }
+
+        .box .value {
+            font-size: 18px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2a3d52;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    ایصالِ ثواب برائے مرحوم عرفان عطاری
+</header>
+
+<div class="container">
+    <!-- Data Boxes -->
+    <div class="box">
+        <span>قرآن پاک</span>
+        <div class="value">39</div>
+    </div>
+    <div class="box">
+        <span>مختلف پارے</span>
+        <div class="value">17</div>
+    </div>
+    <div class="box">
+        <span>درودِ پاک</span>
+        <div class="value">189,600</div>
+    </div>
+    <div class="box">
+        <span>سورۃ فاتحہ</span>
+        <div class="value">3,810</div>
+    </div>
+    <div class="box">
+        <span>سورۃ بقرہ</span>
+        <div class="value">22</div>
+    </div>
+    <div class="box">
+        <span>سورۃ کہف</span>
+        <div class="value">1</div>
+    </div>
+    <div class="box">
+        <span>سورۃ یاسین</span>
+        <div class="value">647</div>
+    </div>
+    <div class="box">
+        <span>سورۃ مزمل</span>
+        <div class="value">630</div>
+    </div>
+    <div class="box">
+        <span>سورۃ الرحمٰن</span>
+        <div class="value">31</div>
+    </div>
+    <div class="box">
+        <span>سورہ مدثر</span>
+        <div class="value">0</div>
+    </div>
+    <div class="box">
+        <span>سورۃ ملک</span>
+        <div class="value">659</div>
+    </div>
+    <div class="box">
+        <span>سورہ واقعہ</span>
+        <div class="value">36</div>
+    </div>
+    <div class="box">
+        <span>سورۃ کوثر</span>
+        <div class="value">161</div>
+    </div>
+    <div class="box">
+        <span>سورۃ اخلاص</span>
+        <div class="value">4,210</div>
+    </div>
+    <div class="box">
+        <span>مختلف سورتیں</span>
+        <div class="value">209</div>
+    </div>
+    <div class="box">
+        <span>آیتِ کریمہ</span>
+        <div class="value">1,900</div>
+    </div>
+    <div class="box">
+        <span>کلمہ طیبہ</span>
+        <div class="value">115,855</div>
+    </div>
+    <div class="box">
+        <span>استغفار</span>
+        <div class="value">6,483</div>
+    </div>
+    <div class="box">
+        <span>درود ِتاج</span>
+        <div class="value">1,805</div>
+    </div>
+    <div class="box">
+        <span>آیت الکرسی</span>
+        <div class="value">2,571</div>
+    </div>
+    <div class="box">
+        <span>درودِ تنجینا</span>
+        <div class="value">512</div>
+    </div>
+    <div class="box">
+        <span>تسبیحِ فاطمہ</span>
+        <div class="value">2,543</div>
+    </div>
+    <div class="box">
+        <span>دلائل الخیرات</span>
+        <div class="value">1</div>
+    </div>
+    <div class="box">
+        <span>مختلف اذکار</span>
+        <div class="value">12,412</div>
+    </div>
+</div>
+
+<footer>
+    © 2025 ایصالِ ثواب
+</footer>
+
+</body>
+</html>
